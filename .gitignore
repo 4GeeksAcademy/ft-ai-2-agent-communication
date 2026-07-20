@@ -96,11 +96,10 @@ next-env.d.ts
 # Testing
 coverage/
 
-# Package manager locks (keep one; ignore others if unused)
-# Uncomment if you standardize on a single package manager:
-# package-lock.json
-# yarn.lock
-# pnpm-lock.yaml
+# Alternate package managers (this repo uses pnpm)
+package-lock.json
+yarn.lock
+npm-shrinkwrap.json
 
 # Misc frontend
 *.pem

@@ -1,0 +1,12 @@
+{
+  "name": "@area-todo/api",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "echo \"FastAPI app not scaffolded yet\"",
+    "build": "echo \"FastAPI app not scaffolded yet\"",
+    "lint": "echo \"FastAPI app not scaffolded yet\"",
+    "test": "echo \"FastAPI app not scaffolded yet\"",
+    "format": "echo \"FastAPI app not scaffolded yet\""
+  }
+}

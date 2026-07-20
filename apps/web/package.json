@@ -1,0 +1,12 @@
+{
+  "name": "@area-todo/web",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "echo \"Next.js app not scaffolded yet\"",
+    "build": "echo \"Next.js app not scaffolded yet\"",
+    "lint": "echo \"Next.js app not scaffolded yet\"",
+    "test": "echo \"Next.js app not scaffolded yet\"",
+    "format": "echo \"Next.js app not scaffolded yet\""
+  }
+}
