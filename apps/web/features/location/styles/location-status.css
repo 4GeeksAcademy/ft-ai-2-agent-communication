@@ -1,0 +1,32 @@
+@import "tailwindcss" reference;
+
+.location-status {
+  @apply rounded-2xl border px-4 py-4;
+}
+
+.location-status--idle,
+.location-status--loading {
+  @apply border-zinc-200 bg-white text-zinc-600;
+}
+
+.location-status--granted {
+  @apply border-emerald-200 bg-emerald-50 text-emerald-900;
+}
+
+.location-status--denied,
+.location-status--unavailable,
+.location-status--error {
+  @apply border-amber-200 bg-amber-50 text-amber-950;
+}
+
+.location-status__label {
+  @apply text-xs font-semibold uppercase tracking-wide;
+}
+
+.location-status__message {
+  @apply mt-2 text-sm leading-6;
+}
+
+.location-status__action {
+  @apply mt-4 inline-flex min-h-11 items-center justify-center rounded-xl bg-zinc-900 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-zinc-700;
+}

@@ -1,0 +1,21 @@
+@import "tailwindcss" reference;
+
+.app-shell {
+  @apply flex min-h-full flex-col bg-zinc-50 text-zinc-900;
+}
+
+.app-shell__header {
+  @apply sticky top-0 z-10 border-b border-zinc-200 bg-white/95 px-4 py-4 backdrop-blur;
+}
+
+.app-shell__title {
+  @apply text-xl font-semibold tracking-tight;
+}
+
+.app-shell__subtitle {
+  @apply mt-1 text-sm text-zinc-500;
+}
+
+.app-shell__main {
+  @apply flex flex-1 flex-col px-4 py-6;
+}

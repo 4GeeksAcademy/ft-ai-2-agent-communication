@@ -1,12 +1,12 @@
 {
   "name": "@area-todo/api",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "echo \"FastAPI app not scaffolded yet\"",
-    "build": "echo \"FastAPI app not scaffolded yet\"",
-    "lint": "echo \"FastAPI app not scaffolded yet\"",
-    "test": "echo \"FastAPI app not scaffolded yet\"",
-    "format": "echo \"FastAPI app not scaffolded yet\""
+    "dev": "uv run uvicorn area_todo_api.main:app --reload --host 0.0.0.0 --port 8000",
+    "build": "uv run python -m compileall src",
+    "lint": "uv run ruff check src tests",
+    "test": "uv run pytest",
+    "format": "uv run autopep8 --in-place --recursive src tests && uv run ruff format src tests"
   }
 }

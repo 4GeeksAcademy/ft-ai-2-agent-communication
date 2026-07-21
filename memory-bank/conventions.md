@@ -1,4 +1,4 @@
-# Coding Convention
+# Coding Conventions
 
 - Use TypeScript with strict mode.
 - Organize components in folders by feature.

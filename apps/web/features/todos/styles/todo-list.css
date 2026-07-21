@@ -1,0 +1,17 @@
+@import "tailwindcss" reference;
+
+.todo-list {
+  @apply mt-6 rounded-2xl border border-zinc-200 bg-white p-4;
+}
+
+.todo-list__heading {
+  @apply text-base font-semibold text-zinc-900;
+}
+
+.todo-list__empty {
+  @apply mt-3 text-sm leading-6 text-zinc-500;
+}
+
+.todo-list__hint {
+  @apply mt-4 inline-flex min-h-11 w-full items-center justify-center rounded-xl border border-dashed border-zinc-300 px-4 py-3 text-sm font-medium text-zinc-700;
+}
