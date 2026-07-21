@@ -89,8 +89,8 @@ node_modules/
 .pnpm-debug.log*
 pnpm-debug.log*
 
-# Next.js build output
-.next/
+# Next.js build output (no trailing slash — also ignore the WSL symlink workaround)
+.next
 out/
 
 # Vercel

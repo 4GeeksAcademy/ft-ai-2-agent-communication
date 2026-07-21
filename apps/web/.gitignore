@@ -13,8 +13,8 @@
 # testing
 /coverage
 
-# next.js
-/.next/
+# next.js (no trailing slash — also ignore the WSL symlink workaround)
+.next
 /out/
 
 # production

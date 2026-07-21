@@ -11,17 +11,17 @@ Work is split into **~1-hour chunks**. Complete one chunk per session. Prefer fi
 
 Each chunk has four parts:
 
-| Part | Purpose |
-|------|---------|
-| **Teaching focus** | The agent/memory skill students practice |
-| **Memory bank work** | Docs to read, write, or update *before or during* coding |
-| **Build work** | Concrete product changes |
-| **Done when** | Exit criteria so the session can end on time |
+| Part                 | Purpose                                                  |
+| -------------------- | -------------------------------------------------------- |
+| **Teaching focus**   | The agent/memory skill students practice                 |
+| **Memory bank work** | Docs to read, write, or update _before or during_ coding |
+| **Build work**       | Concrete product changes                                 |
+| **Done when**        | Exit criteria so the session can end on time             |
 
 **Session workflow (repeat every chunk):**
 
 1. Read only the memory-bank files listed for that chunk (atomicity in practice).
-2. Write or update the memory-bank artifacts *before* asking an agent to implement large changes.
+2. Write or update the memory-bank artifacts _before_ asking an agent to implement large changes.
 3. Give the agent a narrow prompt scoped to this chunk’s “Build work.”
 4. Verify by running the app (`pnpm dev`) and any listed checks.
 5. If a lasting technical choice was made, add a short note under `memory-bank/decisions/`.
@@ -54,13 +54,13 @@ Students start here — do not rebuild these in later chunks:
 
 ## Chunk 1 — Orient the memory bank and the running app (~1 hour)
 
-**Teaching focus:** Why agents fail without persistent, *atomic* context; which file answers which question.
+**Teaching focus:** Why agents fail without persistent, _atomic_ context; which file answers which question.
 
 **Memory bank work:**
 
 - Read: `README.md` (repo root — human lesson framing), `product-context.md`, `architecture.md`, `rules/README.md`, `rules/memory-bank.md`.
 - Add `memory-bank/user-flows.md` with a short outline only (titles + 2–3 bullets per flow). Leave detail for Chunk 2.
-  Suggested flow titles: *Enable location*, *Add a place-tagged todo*, *See nearby todos*, *Pin a session area* (desktop).
+  Suggested flow titles: _Enable location_, _Add a place-tagged todo_, _See nearby todos_, _Pin a session area_ (desktop).
 - Optionally add a one-line “Current status” section at the top of `architecture.md` pointing at this plan.
 
 **Build work:**
@@ -79,11 +79,11 @@ Students start here — do not rebuild these in later chunks:
 
 ## Chunk 2 — Spec proximity: user flows + data contracts (~1 hour)
 
-**Teaching focus:** Spec in the memory bank *before* code; agents follow written contracts better than chat history.
+**Teaching focus:** Spec in the memory bank _before_ code; agents follow written contracts better than chat history.
 
 **Memory bank work:**
 
-- Expand `user-flows.md` for *Enable location*, *Add a place-tagged todo*, and *See nearby todos* (happy path + denied location + empty list).
+- Expand `user-flows.md` for _Enable location_, _Add a place-tagged todo_, and _See nearby todos_ (happy path + denied location + empty list).
 - Add `memory-bank/data-model.md` describing:
   - `Todo` fields (as implemented today)
   - Planned query params for proximity (`lat`, `lng`, optional `radius_m`)
@@ -155,7 +155,7 @@ Students start here — do not rebuild these in later chunks:
 
 **Memory bank work:**
 
-- Update `user-flows.md` with *Complete a todo* and *Edit / delete a todo*.
+- Update `user-flows.md` with _Complete a todo_ and _Edit / delete a todo_.
 - Update `data-model.md` for patch/delete contracts.
 - Read `rules/general.md` — prefer small, focused changes.
 
@@ -194,7 +194,7 @@ Students start here — do not rebuild these in later chunks:
 - Two users cannot see each other’s todos.
 - `auth.md` and security rules still accurately describe the system.
 
-**Scope guard:** Session-pinned *areas* wait for Chunk 7. Auth alone is enough for this hour.
+**Scope guard:** Session-pinned _areas_ wait for Chunk 7. Auth alone is enough for this hour.
 
 ---
 
@@ -204,7 +204,7 @@ Students start here — do not rebuild these in later chunks:
 
 **Memory bank work:**
 
-- Expand `user-flows.md` for *Pin a session area* and *Use pinned area instead of GPS*.
+- Expand `user-flows.md` for _Pin a session area_ and _Use pinned area instead of GPS_.
 - Update `auth.md` / `data-model.md` for area fields on the session or user-device concept (keep the model as simple as the hour allows).
 - Decision doc if the pin is stored server-side vs client-only for the demo.
 
@@ -241,7 +241,7 @@ Students start here — do not rebuild these in later chunks:
 **Done when:**
 
 - A new agent session, given only the memory bank + a short prompt, could continue maintenance without rediscovering architecture from scratch.
-- Students can explain *which* atomic file they would open for a frontend vs auth vs proximity change.
+- Students can explain _which_ atomic file they would open for a frontend vs auth vs proximity change.
 
 ---
 
