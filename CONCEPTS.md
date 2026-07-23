@@ -1,6 +1,6 @@
 # Communicating with Agents
 
-This is a readme intended for human consumption covering the core topics of the lesson we are working on.
+This is a document intended for human consumption covering the core topics of the lesson we are working on.
 
 ## Formats
 
@@ -11,7 +11,7 @@ This is a readme intended for human consumption covering the core topics of the 
 ## Where do things go wrong with larger projects?
 
 - Agents default to being eager.
-- Agents don't have any memory at all.  If it's not in their context, it doesn't exist.
+- Agents don't have any memory at all. If it's not in their context, it doesn't exist.
 - Agents can be inconsistent in their approach
 - Agents can have trouble with larger projects because parts fall out of the context
 - Communication can be hard!
@@ -28,3 +28,11 @@ This is a readme intended for human consumption covering the core topics of the 
 
 - These allow us to create a persistent memory for the agent
 - They also allow us to break this memory up into smaller pieces that fit in the context window better.
+
+## Spec-Driven Development
+
+- Goals: This is a high-level overview of the end result to be.
+- Scope/Out Of Scope: This is the outerbound of what you're building.
+- Constraints: These are how your spec is restricted based on what's been built and what the project depends on.
+- Acceptance criteria: This is hard requirements for what the code needs to do.
+- Context: This is the "why" of what you're building.

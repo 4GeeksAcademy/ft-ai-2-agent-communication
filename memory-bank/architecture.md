@@ -81,6 +81,10 @@ apps/api/
 
 **Endpoints (initial)**
 - `GET /health` — service health check
+- `POST /api/v1/auth/register` — register with email/password
+- `POST /api/v1/auth/login` — login and receive JWT
+- `POST /api/v1/auth/logout` — revoke current session
+- `GET /api/v1/auth/me` — current user + session id
 - `GET /api/v1/todos` — list todos
 - `POST /api/v1/todos` — create a location-tagged todo
 

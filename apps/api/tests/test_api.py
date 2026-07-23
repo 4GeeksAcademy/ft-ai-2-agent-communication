@@ -7,7 +7,7 @@ from sqlmodel import Session, SQLModel, create_engine
 
 from area_todo_api.db import get_session
 from area_todo_api.main import app
-from area_todo_api.models.todo import Todo  # noqa: F401
+from area_todo_api.models import AuthSession, Todo, User  # noqa: F401
 
 test_engine = create_engine(
     "sqlite://",

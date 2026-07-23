@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from area_todo_api.config import settings
+from area_todo_api.controllers.auth import router as auth_router
 from area_todo_api.controllers.health import router as health_router
 from area_todo_api.controllers.todos import router as todos_router
 
@@ -18,6 +19,7 @@ def create_app() -> FastAPI:
     )
 
     app.include_router(health_router)
+    app.include_router(auth_router)
     app.include_router(todos_router)
 
     return app

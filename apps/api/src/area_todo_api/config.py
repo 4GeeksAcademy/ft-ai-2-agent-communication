@@ -13,6 +13,10 @@ class Settings(BaseSettings):
         "postgresql+psycopg://postgres:postgres@localhost:5432/area_todo"
     )
     cors_origins: list[str] = ["http://localhost:3000"]
+    jwt_secret: str = "dev-only-change-me-use-32chars-min"
+    jwt_algorithm: str = "HS256"
+    jwt_expires_seconds: int = 86400
+
 
 
 settings = Settings()
